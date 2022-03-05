@@ -1,12 +1,13 @@
 package algorithms
 
+import algorithms.util.IOUtils
 import java.util.*
 
 fun main() {
     val numbers : Array<Int> = arrayOf(6,4,90,78,43,14,54,112,75,23)
-    val numberToSearch = 112;
+    val numberToSearch = IOUtils.readInteger("Enter number to search.");
     var search = BinarySearch(numbers);
-    if(search.hasElement(numberToSearch)) println("element found at : ${search.indexOf(numberToSearch)} !")
+    if(search.hasElement(numberToSearch)) println("element found at : ${search.indexOf(numberToSearch)} ")
     else println("$numberToSearch was not found!")
 }
 

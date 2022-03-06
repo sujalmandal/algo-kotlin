@@ -1,6 +1,6 @@
-package algorithms
+package algorithms.kotlin
 
-import algorithms.util.IOUtils
+import algorithms.kotlin.util.IOUtils
 import java.util.*
 
 fun main() {

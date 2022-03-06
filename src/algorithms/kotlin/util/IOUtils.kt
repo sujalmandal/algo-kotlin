@@ -1,4 +1,4 @@
-package algorithms.util
+package algorithms.kotlin.util
 
 import java.util.*
 

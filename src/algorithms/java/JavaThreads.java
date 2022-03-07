@@ -1,7 +1,12 @@
 package algorithms.java;
 
+import java.util.Arrays;
+
 public class JavaThreads {
     public static void main(String[] args) throws InterruptedException {
+        String[] arr = new String[]{"-7", "1", "2","300"};
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
         final Object mutex = new Object();
         Thread t1 = new Thread(()->{
             try {

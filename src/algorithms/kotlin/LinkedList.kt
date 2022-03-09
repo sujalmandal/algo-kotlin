@@ -17,6 +17,16 @@ fun LinkedList.add(node : Node) {
     }
 }
 
+fun LinkedList.reverse(){
+    fun rev(n : Node?){
+        if(n==null) return;
+        rev(n?.next);
+        print("[${n?.value}] ");
+    }
+    rev(this.root);
+}
+
+
 fun LinkedList.print(){
     val printer = fun (node : Node?) {
         var temp = node;
@@ -37,4 +47,6 @@ fun main() {
         add(Node(4));
     }
     ll.print();
+    println("----");
+    ll.reverse();
 }
